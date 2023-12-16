@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar';
 import { Outlet } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ const DefaultLayout = () => {
 
   return (
     <div className="dark:bg-boxdark-2 dark:text-bodydark">
-      {/* <!-- ===== Page Wrapper Start ===== --> */}
+      {/* Page Wrapper Start  */}
       <div className="flex h-screen overflow-hidden">
         {/* <!-- ===== Sidebar Start ===== --> */}
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
